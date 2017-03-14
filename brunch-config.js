@@ -8,6 +8,7 @@ module.exports = {
   //     'vendor',
   //   ]
   // },
+  sourceMaps: false,
   files: {
     javascripts: {
       joinTo: {
