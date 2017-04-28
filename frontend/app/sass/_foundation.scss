@@ -1,0 +1,38 @@
+body {
+  background-color: $white;
+}
+
+.brand {
+  background-image: url(../img/brand/blhlogo.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &.hero {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#one-page {
+  position: relative;
+  @include flex-box;
+  width: 100%;
+  height: 100%;
+  flex-flow: column;
+
+  section {
+    @include flex(1 0 auto);
+    @include flex-box;
+    height: 100vh;
+    width: 100%;
+    border: 20px solid $white;
+    background-color: #f2f2f2;
+    align-content: center;
+
+    .brand {
+      @include flex(1 0);
+      margin: auto;
+    }
+  }
+}
